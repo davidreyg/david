@@ -1,64 +1,60 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1" isELIgnored="false"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <%@include file="../../jspf/general.jspf"%>
 </head>
-<body class="white">
-	<div id="loader-wrapper">
-		<div id="loader"></div>
-		<div class="loader-section section-left"></div>
-		<div class="loader-section section-right"></div>
-	</div>
+<body>
+<div class="section"></div>
+  <main>
+    <center>
+      <img class="responsive-img" style="width: 250px;" src="https://i.imgur.com/ax0NCsK.gif" />
+      <div class="section"></div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-md-4 col-lg-4 col-md-offset-4">
-				<h1 class="text-center login-title">Sign in to continue to
-					Bootsnipp</h1>
-				<div class="account-wall">
-					<img class="profile-img"
-						src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
-						alt="">
-					<form class="form-signin" action="login" method="POST">
-						<input type="text" name="username" class="form-control"
-							placeholder="Email" required autofocus> <input
-							type="password" name="password" class="form-control"
-							placeholder="Password" required>
-						<button type="submit" class="btn btn-lg btn-primary btn-block">Ingresar</button>
-						<input type="hidden" name="${_csrf.parameterName}"
-							value="${_csrf.token}" /> <span
-							class="clearfix"></span>
+      <h5 class="indigo-text">Please, login into your account</h5>
+      <div class="section"></div>
 
+      <div class="container">
+        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
 
-						<div class="input-field col s12">
-							<c:if test="${not empty error}">
-								<div class="alert alert-danger alert-dismissible" role="alert">
-									<button type="button" class="close" data-dismiss="alert"
-										aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-									<strong>Upss! </strong>${error}
-								</div>
-							</c:if>
-							<c:if test="${not empty msg}">
-								<div class="alert alert-success alert-dismissible" role="alert">
-									<button type="button" class="close" data-dismiss="alert"
-										aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-									<strong>Bien! </strong>${msg}
-								</div>
-							</c:if>
-						</div>
-					</form>
-				</div>
-<!-- 				<a href="#" class="text-center new-account">Create an account </a> -->
-			</div>
-		</div>
-	</div>
+          <form class="col s12" method="post">
+            <div class='row'>
+              <div class='col s12'>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='input-field col s12'>
+                <input class='validate' type='email' name='email' id='email' />
+                <label for='email'>Enter your email</label>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='input-field col s12'>
+                <input class='validate' type='password' name='password' id='password' />
+                <label for='password'>Enter your password</label>
+              </div>
+              <label style='float: right;'>
+								<a class='pink-text' href='#!'><b>Forgot Password?</b></a>
+							</label>
+            </div>
+
+            <br />
+            <center>
+              <div class='row'>
+                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+              </div>
+            </center>
+          </form>
+        </div>
+      </div>
+      <a href="#!">Create account</a>
+    </center>
+
+    <div class="section"></div>
+    <div class="section"></div>
+  </main>
 </body>
 </html>
