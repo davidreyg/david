@@ -23,8 +23,8 @@ html, body, .login-box {
 					<span class="card-title">Enter credentials</span>
 					<div class="row">
 						<div class="input-field col s12">
-							<label for="user">Email address</label> <input type="text"
-								class="validate" name="user" id="user" />
+							<label for="username">Email address</label> <input type="text"
+								class="validate" name="username" id="username" />
 						</div>
 						<div class="input-field col s12">
 							<label for="password">Password </label> <input type="password"

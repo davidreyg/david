@@ -26,7 +26,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-
 @Controller
 public class MainController {
 
@@ -65,14 +64,16 @@ public class MainController {
 					mp.put("rpta", false);
 				}
 				break;
-//			case "puesto":
-//				Map<String, Object> sr = new HashMap<String, Object>();
-//				sr.put("dep", ((CustomUser) authentication.getPrincipal()).getNO_DEP());
-//				sr.put("area", ((CustomUser) authentication.getPrincipal()).getNO_AREA());
-//				sr.put("seccion", ((CustomUser) authentication.getPrincipal()).getNO_SECCION());
-//				sr.put("puesto", ((CustomUser) authentication.getPrincipal()).getNO_PUESTO());
-//				mp.put("info_puesto", sr);
-//				break;
+			// case "puesto":
+			// Map<String, Object> sr = new HashMap<String, Object>();
+			// sr.put("dep", ((CustomUser) authentication.getPrincipal()).getNO_DEP());
+			// sr.put("area", ((CustomUser) authentication.getPrincipal()).getNO_AREA());
+			// sr.put("seccion", ((CustomUser)
+			// authentication.getPrincipal()).getNO_SECCION());
+			// sr.put("puesto", ((CustomUser)
+			// authentication.getPrincipal()).getNO_PUESTO());
+			// mp.put("info_puesto", sr);
+			// break;
 			case "usuario":
 				mp.put("datos_usuario", ((CustomUser) authentication.getPrincipal()).getNOMBRE_AP());
 				break;
@@ -87,11 +88,10 @@ public class MainController {
 		out.flush();
 		out.close();
 	}
-	
+
 	@RequestMapping("/administrador")
 	public ModelAndView principal(HttpServletRequest request, HttpServletResponse response) {
 		return new ModelAndView("home");
 	}
-	
 
 }

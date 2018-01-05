@@ -1,23 +1,17 @@
 <style>
-.footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-/* 	color: white; */
-	text-align: center;
-/* 	background-color: #15224f; */
-	min-height: 30px;
+footer {
 	width: 100%;
+	position: fixed;
+	bottom: 0; /* NUEVO */
 }
 </style>
-<hr>
-<footer class="footer page-footer green accent-3">
+
+<footer class="page-footer green accent-3">
 	<div class="footer-copyright">
 		<div class="container">
-			Copyright © 2018 <a class="grey-text text-lighten-4" target="_blank">David
-				Rey Gutierrez </a> Todos los derechos reservados. <span class="right">Desarrollado
-				por <a class="grey-text text-lighten-4">David Rey Gutierrez</a>
-			</span>
+			Copyright © 2017 <a class="grey-text text-lighten-4" target="_blank">Alpha
+				Team</a> All rights reserved. <span class="right">Developed by <a
+				class="grey-text text-lighten-4">Alpha Team</a></span>
 		</div>
 	</div>
 </footer>
