@@ -10,45 +10,36 @@
 	rel="stylesheet" media="screen,projection">
 <%@include file="../../jspf/general.jspf"%>
 </head>
+<style>
+html, body, .login-box {
+	height: 100%;
+}
+</style>
 <body class="white">
-	<h4 class="header">Mobile Collapse Button</h4>
-	<div class="row">
-		<div class="col s12 m4 l3">
-			<p>
-				When your nav bar is resized, you will see that the links on the
-				right turn into a hamburger icon <i class="mdi-navigation-menu"></i>.
-				Take a look at the example below to get this functionality. Add the
-				entire
-				<code class=" language-markup">button-collapse</code>
-				line to your
-				<code class=" language-markup">nav</code>
-				.
-			</p>
-		</div>
-		<div class="col s12 m8 l9">
-			<nav class="deep-orange">
-			<div class="nav-wrapper">
-				<div class="col s12">
-					<a href="#!" class="brand-logo">Logo</a> <a href="#"
-						data-activates="mobile-demo" class="button-collapse"><i
-						class="mdi-navigation-menu"></i></a>
-					<ul class="right hide-on-med-and-down">
-						<li><a href="sass.html">Sass</a></li>
-						<li><a href="components.html">Components</a></li>
-						<li><a href="javascript.html">Javascript</a></li>
-						<li><a href="mobile.html">Mobile</a></li>
-					</ul>
-					<ul class="side-nav" id="mobile-demo">
-						<li><a href="sass.html">Sass</a></li>
-						<li><a href="components.html">Components</a></li>
-						<li><a href="javascript.html">Javascript</a></li>
-						<li><a href="mobile.html">Mobile</a></li>
-					</ul>
+	<div class="valign-wrapper row login-box">
+		<div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
+			<form action="login" method="POST">
+				<div class="card-content">
+					<span class="card-title">Enter credentials</span>
+					<div class="row">
+						<div class="input-field col s12">
+							<label for="user">Email address</label> <input type="text"
+								class="validate" name="user" id="user" />
+						</div>
+						<div class="input-field col s12">
+							<label for="password">Password </label> <input type="password"
+								class="validate" name="password" id="password" />
+						</div>
+					</div>
 				</div>
-			</div>
-			</nav>
+				<div class="card-action right-align">
+					<input type="reset" id="reset"
+						class="btn-flat grey-text waves-effect"> <input
+						type="submit" class="btn green waves-effect waves-light"
+						value="Login">
+				</div>
+			</form>
 		</div>
-	</div>
 	</div>
 </body>
 </html>
