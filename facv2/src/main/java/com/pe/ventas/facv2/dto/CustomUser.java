@@ -77,7 +77,7 @@ public class CustomUser implements UserDetails,Serializable {
 		this.PW_USUARIO = ((String) userinfo.get("PSW_USU")).trim();
 		this.ID_USUARIO = (String) userinfo.get("ID_USUARIO");
 		this.ID_EMPLEADO = (String) userinfo.get("ID_EMPLEADO");
-		this.ID_ROL = (userinfo.get("IDROL"))+"";
+		this.ID_ROL = (userinfo.get("ID_ROL"))+"";
 		this.NO_DIRECCION = (String) userinfo.get("DIR_EMP");
 		this.ES_SEXO = (String) userinfo.get("SEX_EMP");
 //		this.NOMBRE_AP = ((String) userinfo.get("APEL_EMP")).trim() + " " + ((String) userinfo.get("NOM_EMP")).trim();

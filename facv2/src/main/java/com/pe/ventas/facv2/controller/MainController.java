@@ -51,6 +51,7 @@ public class MainController {
 				sr.put("pr", pD.listarURLs(Rol, Modulo));
 				sr.put("usuario", ((CustomUser) authentication.getPrincipal()));
 				mp.put("datos", sr);
+				System.out.println(sr);
 				break;
 			case "modulos":
 				mp.put("lista", ((CustomUser) authentication.getPrincipal()).getLIST_MODULO());

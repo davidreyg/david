@@ -1,54 +1,53 @@
-
 <header id="header" class="page-topbar">
 	<!-- start header nav-->
-	<nav>
-		<div class="nav-wrapper blue darken-1">
-			<a href="<%=request.getContextPath()%>/menu"><img
-				src="<c:url value="/resources/img/gth.png"/>" alt="gth logo"
-				style="width: 125px;"> </a> <a href="#"
+	<nav class="blue darken-1">
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo">Logo</a> <a href="#"
 				data-activates="mobile-demo" class="button-collapse"><i
 				class="material-icons">menu</i></a>
 			<ul class="right hide-on-med-and-down">
-<!-- 				<li><a href="sass.html">Sass</a></li> -->
-<!-- 				<li><a href="badges.html">Components</a></li> -->
-<!-- 				<li><a href="collapsible.html">Javascript</a></li> -->
-<!-- 				<li><a href="mobile.html">Mobile</a></li> -->
+				<!-- Dropdown Trigger -->
+				<li><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_mant-h">Mantenimiento<i
+						class="material-icons right">arrow_drop_down</i></a></li>
+				<li><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_alm-h">Almacen<i
+						class="material-icons right">arrow_drop_down</i></a></li>
 			</ul>
 			<ul class="side-nav" id="mobile-demo">
-<!-- 				<li><a href="sass.html">Sasssss</a></li> -->
-<!-- 				<li><a href="badges.html">Components</a></li> -->
-<!-- 				<li><a href="collapsible.html">Javascript</a></li> -->
-<!-- 				<li><a href="mobile.html">Mobile</a></li> -->
+				<!-- Dropdown Trigger -->
+				<li ><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_mant-v">Mantenimiento<i
+						class="material-icons right">arrow_drop_down</i></a></li>
+				<li><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_alm-v">Almacen<i
+						class="material-icons right">arrow_drop_down</i></a></li>
 			</ul>
 		</div>
 	</nav>
+
+	<ul id="ddn_mant-h" class="cyan lighten-1 dropdown-content">
+		<li><a href="#!">Empleado</a></li>
+		<li><a href="#!">Proveedores</a></li>
+		<li class="divider"></li>
+		<li><a href="#!">Categoria</a></li>
+	</ul>
+	<ul id="ddn_mant-v" class="cyan lighten-1 dropdown-content">
+		<li><a href="#!">Empleado</a></li>
+		<li><a href="#!">Proveedores</a></li>
+		<li class="divider"></li>
+		<li><a href="#!">Categoria</a></li>
+	</ul>
+	<ul id="ddn_alm-h" class="dropdown-content">
+		<li><a href="#!">Productos</a></li>
+		<li><a href="#!">Mercancia</a></li>
+	</ul>
+	<ul id="ddn_alm-v" class="dropdown-content">
+		<li><a href="#!">Productos</a></li>
+		<li><a href="#!">Mercancia</a></li>
+	</ul>
+
 </header>
-<script type="text/javascript">
-function loadProfile(){
-<%-- 	location.href="<%=request.getContextPath()%>/trabajador/edit_perfil"; --%>
-alert();
-}
-
-$(document).ready(function(){
-	
+<script>
 	$(".button-collapse").sideNav();
-	try{
-		$.getJSON(gth_context_path + '/componentes',"opc=usuario",function(objJSON){
-			if(objJSON !== null){
-				var s='';
-				s +='<img src="<c:url value="/resources/img/user.png"/>" alt="Usuario">';
-				s +=objJSON.datos_usuario;
-				$(".cgProfile").empty();
-				$(".cgProfile").append(s);
-			}else{
-				console.error("No se esta cargando la información");
-			}
-		});
-	}catch(e){
-		console.error("error al listar info : "+e);
-	}	
-});
-
 </script>
-
-

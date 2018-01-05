@@ -26,7 +26,7 @@ public class PrivilegioDAO {
     
     
     public ArrayList<Map<String, Object>> listarURLs(String idrol, String id_modulo) {
-        sql = "select * from  RHVD_PRIVILEGIO where ID_ROL='" + idrol + "' and id_modulo='" + id_modulo + "' ";
+        sql = "select * from  VISTA_PRIVILEGIOS where ID_ROL='" + idrol + "' and id_modulo='" + id_modulo + "' ";
         return (ArrayList<Map<String, Object>>) jt.queryForList(sql);
     }
 }

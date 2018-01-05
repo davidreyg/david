@@ -23,6 +23,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.google.gson.Gson;
 
+import com.pe.ventas.facv2.dto.CustomUser;
+
 //import pe.edu.upeu.D.dto.CustomUser;
 
 //import pe.edu.upeu.prueba.entidad.Aula;
@@ -60,17 +62,18 @@ public class HomeController {
 
 	@GetMapping(value = { "menu", "/" })
 	public String menu(HttpServletRequest request, HttpServletResponse response, Authentication authentication) {
-		// String Rol = ((CustomUser) authentication.getPrincipal()).getID_ROL();
-		String pagina = "";
+		String Rol = ((CustomUser) authentication.getPrincipal()).getID_ROL();
+		String pagina="";
 		HttpSession session = request.getSession(true);
-		// System.out.println(Rol);
-		// if (Rol.equals("ROL-0013")) {
-		System.out.println("redireccionar a home");
-		session.setAttribute("ModE", "MOD-0001");
-		pagina = "home";
-		// } else {
-		// pagina = "menu";
-		// }
+		System.out.println(Rol);
+		if(Rol.equals("ROL-000002")) {
+			System.out.println("redireccionar a home");
+			session.setAttribute("ModE", "MOD-000001");
+			pagina = "home";
+		}
+		else {
+			pagina = "menu";
+		}
 		return pagina;
 	}
 
