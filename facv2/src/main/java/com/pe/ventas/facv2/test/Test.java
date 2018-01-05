@@ -5,19 +5,22 @@ import javax.sql.DataSource;
 import com.google.gson.Gson;
 import com.pe.ventas.facv2.config.AppConfig;
 import com.pe.ventas.facv2.config.UserDetailsServiceImpl;
+import com.pe.ventas.facv2.dao.EmpleadoDAO;
 import com.pe.ventas.facv2.dto.CustomUser;
+
 
 public class Test {
 
 	public static DataSource d = AppConfig.getDataSource();
 	public static Gson gs = new Gson();
+	public static EmpleadoDAO au = new EmpleadoDAO(d);
 
 	public static void main(String[] args) {
-		conect();
-		checkSecurityDaoAuthentication();
+//		conect();
+//		checkSecurityDaoAuthentication();
 		// gilber cambio
 		// Autorizar();
-		// Procesar();
+		 Emp_listar();
 		// Procesar1();
 		// Renuncia();
 	}
@@ -40,6 +43,10 @@ public class Test {
 		System.out.println("password: " + user.getPassword());
 		System.out.println("checked!");
 
+	}
+	
+	public static void Emp_listar() {
+		System.out.println(gs.toJson(au.listar()));
 	}
 
 }
