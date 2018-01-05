@@ -9,12 +9,9 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -37,7 +34,7 @@ public class RolDAO implements CRUDOperations<Rol> {
 		jt = new JdbcTemplate(dataSource);
 	}
 
-	public ArrayList<Map<String, Object>> listar() {
+	public List<Map<String, Object>> listar() {
 		sql = "select * from RHTR_ROL order by no_rol asc";
 		return (ArrayList<Map<String, Object>>) jt.queryForList(sql);
 	}
@@ -76,7 +73,7 @@ public class RolDAO implements CRUDOperations<Rol> {
 	}
 
 	@Override
-	public ArrayList<Map<String, Object>> buscar(Rol id) {
+	public List<Map<String, Object>> buscar(Rol id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
