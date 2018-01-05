@@ -17,7 +17,7 @@ public class Test {
 
 	public static void main(String[] args) {
 //		conect();
-//		checkSecurityDaoAuthentication();
+		checkSecurityDaoAuthentication();
 		// gilber cambio
 		// Autorizar();
 		 Emp_listar();

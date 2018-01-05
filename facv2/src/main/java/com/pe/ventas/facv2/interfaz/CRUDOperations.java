@@ -2,14 +2,15 @@ package com.pe.ventas.facv2.interfaz;
 import java.util.ArrayList;
 import java.util.Map;
 
-public interface CRUDOperations {
+public interface CRUDOperations <E> {
 	
 	public ArrayList<Map<String, Object>> listar();
 
-    public boolean add(Object o);
+    public int crear(E ent);
 
-    public boolean edit(Object o);
+    public int modificar(E id);
 
-    public boolean delete(Object o);
+    public int eliminar(E id);
 
+    public ArrayList<Map<String, Object>> buscar(E id);
 }
