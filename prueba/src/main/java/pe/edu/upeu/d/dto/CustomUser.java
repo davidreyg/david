@@ -80,7 +80,7 @@ public class CustomUser implements UserDetails,Serializable {
 		this.ID_ROL = (userinfo.get("IDROL"))+"";
 		this.NO_DIRECCION = (String) userinfo.get("DIR_EMP");
 		this.ES_SEXO = (String) userinfo.get("SEX_EMP");
-		this.NOMBRE_AP = ((String) userinfo.get("APEL_EMP")).trim() + " " + ((String) userinfo.get("NOM_EMP")).trim();
+//		this.NOMBRE_AP = ((String) userinfo.get("APEL_EMP")).trim() + " " + ((String) userinfo.get("NOM_EMP")).trim();
 		this.LIST_MODULO = listmod;
 		this.accountNonExpired = accountNonExpired;
 		this.AccountNonLocked = AccountNonLocked;
