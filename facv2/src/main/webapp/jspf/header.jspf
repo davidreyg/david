@@ -1,0 +1,105 @@
+<header id="header" class="page-topbar">
+	<!-- start header nav-->
+	<nav class="orange lighten-4 darken-1">
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo">Logo</a> <a href="#"
+				data-activates="mobile-demo" class="button-collapse"><i
+				class="material-icons">menu</i></a>
+				
+			<ul class="right hide-on-med-and-down">
+				<!-- Dropdown Trigger -->
+				
+			<li><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_alm-i" data-beloworigin="true"><i class="material-icons">home</i>
+					<i	class="material-icons right">arrow_drop_down</i></a></li>
+						
+						<li><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_vent-v" data-beloworigin="true"> 
+					<i class="material-icons left">shopping_cart</i>ventas
+					<i  class="material-icons right">arrow_drop_down</i>
+					
+					</a></li>
+						
+				<li><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_alm-h" data-beloworigin="true">
+					<i class="material-icons left"> shop</i>Compras
+					<i  class="material-icons right">arrow_drop_down</i></a></li>
+					
+					<li><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_alm-h" data-beloworigin="true"><i class="material-icons left">store</i>Almacen
+					<i class="material-icons right">arrow_drop_down</i></a></li>
+						
+						<li><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_mant-h" data-beloworigin="true"><i class="material-icons left">settings</i>Mantenimiento
+					<i class="material-icons right">arrow_drop_down</i></a></li>
+						
+						<li><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_alm-h" data-beloworigin="true"><i class="material-icons left">search</i>Consultas
+					<i	class="material-icons right">arrow_drop_down</i></a></li>		
+						
+						<li><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_alm-h" data-beloworigin="true"><i class="material-icons left">assessment</i>Tesoreria<i
+						class="material-icons right">arrow_drop_down</i></a></li>
+						
+						<li><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_alm-h"data-beloworigin="true"><i class="material-icons left">settings_backup_restore</i>Copia de seguridad<i
+						class="material-icons right">arrow_drop_down</i></a></li>
+			</ul>
+			
+			
+			<ul class="side-nav" id="mobile-demo">
+				<!-- Dropdown Trigger -->
+				<li ><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_mant-v" data-beloworigin="true">Mantenimiento<i
+						class="material-icons right">arrow_drop_down</i></a></li>
+				<li><a class="dropdown-button cyan lighten-1" href="#!"
+					data-activates="ddn_alm-v" data-beloworigin="true">Almacen<i
+						class="material-icons right">arrow_drop_down</i></a></li>
+			</ul>
+			
+			
+			
+			
+			
+			
+		</div>
+	</nav>
+
+	<ul id="ddn_mant-h" class="cyan lighten-1 dropdown-content">
+		<li><a href="#!">Empleado</a></li>
+		<li><a href="#!">Proveedores</a></li>
+		<li class="divider"></li>
+		<li><a href="#!">Categoria</a></li>
+	</ul>
+		<ul id="ddn_vent-v" class=" dropdown-content">
+				<li><a href="#!">Venta mostrador</a></li>
+				<li><a href="#!">Factura</a></li>
+				<li><a href="#!">Ordenes de salida</a></li>
+				<li><a href="#!">Factura de guia</a></li>
+				<li class="divider"></li>
+				<li><a href="#!">Clientes</a></li>
+	</ul>
+	
+	<ul id="ddn_mant-v" class="cyan lighten-1 dropdown-content">
+		<li><a href="#!">Empleado</a></li>
+		<li><a href="#!">Proveedores</a></li>
+		<li class="divider"></li>
+		<li><a href="#!">Categoria</a></li>
+	</ul>
+	<ul id="ddn_alm-h" class="dropdown-content">
+		<li><a href="#!">Productos</a></li>
+		<li><a href="#!">Mercancia</a></li>
+	</ul>
+	<ul id="ddn_alm-v" class="dropdown-content">
+		<li><a href="#!">Productos</a></li>
+		<li><a href="#!">Mercancia</a></li>
+	</ul>
+	<ul id="ddn_alm-i" class="dropdown-content">
+		<li><a href="#!">Iniciar</a></li>
+		<li><a href="#!">Salir</a></li>
+	</ul>
+
+</header>
+<script>
+	$(".button-collapse").sideNav();
+</script>

@@ -14,6 +14,27 @@ footer {
 	position: fixed;
 	bottom: 0; /* NUEVO */
 }
+
+.brand-logo {
+	font-weight: 900;
+}
+
+.dropdown-content {
+	background-color: #FFFFFF;
+	margin: 0;
+	display: none;
+	min-width: 300px; /* Changed this to accomodate content width */
+	max-height: auto;
+	margin-left: -1px;
+	/* Add this to keep dropdown in line with edge of navbar */
+	overflow: hidden;
+	/* Changed this from overflow-y:auto; to overflow:hidden; */
+	opacity: 0;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 1;
+	will-change: width, height;
+}
 </style>
 </head>
 <body>
@@ -38,11 +59,9 @@ footer {
 	</footer>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			listarModulos();		
+			listarModulos();
 		});
-		
 
-		
 		function listarModulos() {
 			var url = "components";
 			var data = "opc=modulos";
@@ -67,17 +86,17 @@ footer {
 		}
 
 		function createModulo(idmodulo, nombre, icon, color, link) {
-			console.log(idmodulo + "*" + link );
+			console.log(idmodulo + "*" + link);
 			var s = '<div class="circulo waves-effect waves-light"  id="'
 					+ idmodulo + "*" + link + '" onclick="show(this.id)">';
 
-			s += '<div class="circulo2">';
-			s += '<i class="contA '+icon+' large icon-demo size-icon" style="color:'+color+';"></i>';
-			s += '<h6 class="contB light italic">' + nombre + '</h6>';
-			s += '</div>';
+			s += '_$tag_________________';
+			s += '_$tag_________________________________________________________________________$ta';
+			s += '_$tag__________________________' + nombre + '_$tag';
+			s += '_$tag_';
 
-			s += '</div>';
-			s += '</div>';
+			s += '_$tag_';
+			s += '_$tag_';
 			return s;
 		}
 
