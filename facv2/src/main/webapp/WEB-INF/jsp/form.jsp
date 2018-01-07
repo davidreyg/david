@@ -17,6 +17,30 @@
 
 	<div class="container">
 		<!-- Page Content goes here -->
+		<div class="caja" data-mcs-theme="dark">Lorem ipsum dolor sit
+			amet, consectetur adipisicing elit. Obcaecati odio sit unde, facilis
+			quibusdam neque dolorum nihil ipsum aliquid, porro hic aboriosam
+			maiores in, quis. Ducimus aspernatur, doloribus possimus ullam. Lorem
+			ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati odio
+			sit unde, facilis quibusdam neque dolorum nihil ipsum aliquid, porro
+			hic aboriosam maiores in, quis. Ducimus aspernatur, doloribus
+			possimus ullam. Lorem ipsum dolor sit amet, consectetur adipisicing
+			elit. Obcaecati odio sit unde, facilis quibusdam neque dolorum nihil
+			ipsum aliquid, porro hic aboriosam maiores in, quis. Ducimus
+			aspernatur, doloribus possimus ullam. Lorem ipsum dolor sit amet,
+			consectetur adipisicing elit. Obcaecati odio sit unde, facilis
+			quibusdam neque dolorum nihil ipsum aliquid, porro hic aboriosam
+			maiores in, quis. Ducimus aspernatur, doloribus possimus ullam. Lorem
+			ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati odio
+			sit unde, facilis quibusdam neque dolorum nihil ipsum aliquid, porro
+			hic aboriosam maiores in, quis. Ducimus aspernatur, doloribus
+			possimus ullam. Lorem ipsum dolor sit amet, consectetur adipisicing
+			elit. Obcaecati odio sit unde, facilis quibusdam neque dolorum nihil
+			ipsum aliquid, porro hic aboriosam maiores in, quis. Ducimus
+			aspernatur, doloribus possimus ullam. Lorem ipsum dolor sit amet,
+			consectetur adipisicing elit. Obcaecati odio sit unde, facilis
+			quibusdam neque dolorum nihil ipsum aliquid, porro hic aboriosam
+			maiores in, quis. Ducimus aspernatur, doloribus possimus ullam.</div>
 
 
 		<div class="row">
@@ -26,7 +50,8 @@
 					<div class="col m12 s12  center-align">Buscar Empleado</div>
 					<div class="input-field col s12 m4	">
 						<i class="mdi-action-pageview"></i><input id="txt_nombre"
-							type="text" class="validate"> <label for="txt_nombre">DNI, nombre,telefono</label>
+							type="text" class="validate"> <label for="txt_nombre">DNI,
+							nombre,telefono</label>
 					</div>
 
 
@@ -58,7 +83,7 @@
 									<th>Nombre</th>
 									<th>DNI</th>
 									<th>Telefono</th>
-									<th>sd   </th>
+									<th>sd</th>
 								</tr>
 							</thead>
 
@@ -68,15 +93,14 @@
 									<td>Eclair</td>
 									<td>$0.87</td>
 									<td><div class="s12 m12">
-									<a
-										class="btn-floating btn-medium waves-effect waves-light blue-grey"><i
-											class="material-icons">remove_red_eye</i></a>
 											<a
-										class="btn-floating btn-medium waves-effect waves-light blue-grey"><i
-											class="material-icons">edit</i></a>
-											<a
-										class="btn-floating btn-medium waves-effect waves-light blue-grey"><i
-											class="material-icons">delete</i></a></div></td>
+												class="btn-floating btn-medium waves-effect waves-light blue-grey"><i
+												class="material-icons">remove_red_eye</i></a> <a
+												class="btn-floating btn-medium waves-effect waves-light blue-grey"><i
+												class="material-icons">edit</i></a> <a
+												class="btn-floating btn-medium waves-effect waves-light blue-grey"><i
+												class="material-icons">delete</i></a>
+										</div></td>
 								</tr>
 								<tr>
 									<td>Alan</td>
@@ -113,6 +137,14 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			// 			alert();
+		});
+
+		$(".caja").mCustomScrollbar({
+			axis : "x",
+			theme : "dark-3",
+			advanced : {
+				autoExpandHorizontalScroll : true
+			}
 		});
 	</script>
 </body>
