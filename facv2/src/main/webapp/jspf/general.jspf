@@ -15,9 +15,6 @@
 	rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
-<link
-	href="<c:url value='/resources/css/materializecss-icon.css'></c:url>"
-	rel="stylesheet" type="text/css" />
 <link href="<c:url value='/resources/css/jquery-confirm.css'></c:url>"
 	rel="stylesheet" type="text/css" />
 
