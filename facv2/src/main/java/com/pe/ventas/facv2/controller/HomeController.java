@@ -69,7 +69,7 @@ public class HomeController {
 		if(Rol.equals("ROL-000002")) {
 			System.out.println("redireccionar a home");
 			session.setAttribute("ModE", "MOD-000001");
-			pagina = "home";
+			pagina = "form";
 		}
 		else {
 			pagina = "menu";
