@@ -17,6 +17,8 @@
 	rel="stylesheet">
 <link href="<c:url value='/resources/css/jquery-confirm.css'></c:url>"
 	rel="stylesheet" type="text/css" />
+<link href="<c:url value='/resources/css/jBox.css'></c:url>"
+	rel="stylesheet" type="text/css" />
 
 
 <!-- Javascript-->
@@ -25,6 +27,8 @@
 <script src="<c:url value='/resources/js/materialize.min.js'></c:url>"
 	type="text/javascript"></script>
 <script src="<c:url value='/resources/js/jquery-confirm.js'></c:url>"
+	type="text/javascript"></script>
+<script src="<c:url value='/resources/js/jBox.min.js'></c:url>"
 	type="text/javascript"></script>
 <script>
 var facv2_context_path = "<%=request.getContextPath()%>";
