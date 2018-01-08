@@ -1,3 +1,8 @@
+
+
+
+
+
 <header id="header" class="page-topbar">
 	<!-- start header nav-->
 	<nav class="orange lighten-4 darken-1">
@@ -9,15 +14,11 @@
 			<ul class="right hide-on-med-and-down">
 				<!-- Dropdown Trigger -->
 
-				<!-- 			<li><a class="dropdown-button cyan lighten-1" href="#!" -->
-				<!-- 					data-activates="ddn_alm-i" data-beloworigin="true"> -->
-				<!-- 					<i class="material-icons">home</i>nn -->
-				<!-- 					<i	class="material-icons right">arrow_drop_down</i></a></li> -->
-
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_alm-i" data-beloworigin="true"> <i
-						class="material-icons left"> home</i>Inicio <i
-						class="material-icons right">arrow_drop_down</i></a></li>
+					data-activates="ddn_alm-i " data-beloworigin="true"> <i
+						class="material-icons left">home</i> <i
+						class="material-icons right">arrow_drop_down</i>inicio
+				</a></li>
 
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
 					data-activates="ddn_vent-v" data-beloworigin="true"> <i
@@ -27,61 +28,105 @@
 				</a></li>
 
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_alm-h" data-beloworigin="true"> <i
+					data-activates="ddn_comp-c" data-beloworigin="true"> <i
 						class="material-icons left"> shop</i>Compras <i
 						class="material-icons right">arrow_drop_down</i></a></li>
 
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_alm-h" data-beloworigin="true"><i
+					data-activates="ddn_alm-h" data-beloworigin="true"> <i
 						class="material-icons left">store</i>Almacen <i
 						class="material-icons right">arrow_drop_down</i></a></li>
 
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_mant-h" data-beloworigin="true"><i
+					data-activates="ddn_mant-h" data-beloworigin="true"> <i
 						class="material-icons left">settings</i>Mantenimiento <i
 						class="material-icons right">arrow_drop_down</i></a></li>
 
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_alm-h" data-beloworigin="true"><i
+					data-activates="ddn_cons-h" data-beloworigin="true"> <i
 						class="material-icons left">search</i>Consultas <i
 						class="material-icons right">arrow_drop_down</i></a></li>
 
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_alm-h" data-beloworigin="true"><i
+					data-activates="ddn_tes-h" data-beloworigin="true"> <i
 						class="material-icons left">assessment</i>Tesoreria<i
 						class="material-icons right">arrow_drop_down</i></a></li>
 
-				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_alm-h" data-beloworigin="true"><i
-						class="material-icons left">settings_backup_restore</i>Copia de
-						seguridad<i class="material-icons right">arrow_drop_down</i></a></li>
+
 			</ul>
 
 
 			<ul class="side-nav" id="mobile-demo">
 				<!-- Dropdown Trigger -->
-				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_mant-v" data-beloworigin="true">Mantenimiento<i
-						class="material-icons right">arrow_drop_down</i></a></li>
-				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_alm-v" data-beloworigin="true">Almacen<i
-						class="material-icons right">arrow_drop_down</i></a></li>
-			</ul>
+				
+		
 
 
 
+    <li>
+      <div class="collapsible-header cyan "><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header cyan "><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header cyan"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
 
+
+	</ul>
 
 
 		</div>
 	</nav>
-
-	<ul id="ddn_mant-h" class="cyan lighten-1 dropdown-content">
-		<li><a href="#!">Empleado</a></li>
+<!-- mantenimiento -->
+	<ul id="ddn_mant-h" class=" dropdown-content">
+		<li><a href="#!">Empleados</a></li>
 		<li><a href="#!">Proveedores</a></li>
-		<li class="divider"></li>
 		<li><a href="#!">Categoria</a></li>
+		<li><a href="#!">Cliente</a></li>
+		<li><a href="#!">Presentacion</a></li>
+		<li><a href="#!">Impuestos</a></li>
+		<li><a href="#!">Entidades bancarias</a></li>
+		<li><a href="#!">Presentacion</a></li>
+		<li><a href="#!">Formas de Pago</a></li>
+		<li><a href="#!">Ubicaciones</a></li>
+		
+		</ul>
+	
+<!-- 	almacen -->
+	<ul id="ddn_alm-h" class=" dropdown-content">
+		<li><a href="#!">Productos</a></li>
+		<li><a href="#!">Categoria</a></li>
+		<li><a href="#!">Presentacion</a></li>
+		<li class="divider"></li>
+		<li><a href="#!">Existencias</a></li>
+		<li><a href="#!">Stock min</a></li>
 	</ul>
+<!-- 	consulta -->
+	<ul id="ddn_cons-h" class=" dropdown-content">
+		<li><a href="#!">Proveedores</a></li>
+		<li><a href="#!">Clientes</a></li>
+		<li><a href="#!">Existencias</a></li>
+		<li><a href="#!">Compras</a></li>
+		<li><a href="#!">Ventas</a></li>
+		<li><a href="#!">Creditos</a></li>
+	
+	</ul>
+<!-- 	tesoreria -->
+		<ul id="ddn_tes-h" class=" dropdown-content">
+		<li><a href="#!">Cobros</a></li>
+		<li><a href="#!">Pagos</a></li>
+		<li><a href="#!">Caja diaria</a></li>
+		<li><a href="#!">Libro diario</a></li>
+
+	
+	</ul>
+	
+	
 	<ul id="ddn_vent-v" class=" dropdown-content">
 		<li><a href="#!">Venta mostrador</a></li>
 		<li><a href="#!">Factura</a></li>
@@ -97,10 +142,21 @@
 		<li class="divider"></li>
 		<li><a href="#!">Categoria</a></li>
 	</ul>
-	<ul id="ddn_alm-h" class="dropdown-content">
-		<li><a href="#!">Productos</a></li>
-		<li><a href="#!">Mercancia</a></li>
+
+
+
+
+	<ul id="ddn_comp-c" class="dropdown-content">
+		<li><a href="#!">Proveedores</a></li>
+		<li><a href="#!">Facturar guia de despacho</a></li>
+		<li><a href="#!">Recepcion de mercancia</a></li>
+	
+		
+		
 	</ul>
+
+
+
 	<ul id="ddn_alm-v" class="dropdown-content">
 		<li><a href="#!">Productos</a></li>
 		<li><a href="#!">Mercancia</a></li>
@@ -109,9 +165,8 @@
 		<li><a href="#!">Iniciar</a></li>
 		<li><a href="#!">Salir</a></li>
 	</ul>
-	<br>
-</header>
 
+</header>
 <script>
 	$(".button-collapse").sideNav();
 </script>
