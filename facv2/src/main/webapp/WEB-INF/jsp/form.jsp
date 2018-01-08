@@ -10,21 +10,7 @@
 	<%@include file="../../jspf/header.jspf"%>
 	<div class="container">
 		<div class="card-panel">
-			<div class="row">
-
-				<div class="col m12 s12  center-align">Buscar Empleado</div>
-				<i class="fas fa-camera-retro fa-sm"></i>
-				<div class="input-field col s12 m4	">
-					<input id="txt_nombre" type="text" class="validate"> <label
-						for="txt_nombre">DNI, nombre,telefono</label>
-				</div>
-
-
-				<div class="col m12 s12  center-align">BUSCAR EMPLEADO</div>
-		
-
-
-				
+			<div class="row">		
 			</div>
 		</div>
 
