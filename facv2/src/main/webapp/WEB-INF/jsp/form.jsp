@@ -6,23 +6,6 @@
 <head>
 <%@include file="../../jspf/general.jspf"%>
 </head>
-<style>
-/* .caja { */
-/* 	position: relative; */
-/* 	width: 800px; */
-/* 	height: 400px; */
-/* 	overflow: auto; */
-/* } */
-
-/* .caja .content { */
-/* 	/* 	background-image: url('https://i.imgur.com/nAUUNzH.jpg'); */
-*
-/
-/* 	width: 1280px; */
-/* 	height: 720px; */
-/* } */
-</style>
-
 <body>
 	<%@include file="../../jspf/header.jspf"%>
 	<div class="container">
@@ -31,12 +14,11 @@
 				<div class="col m12 s12  center-align">Buscar Empleado</div>
 				<i class="fas fa-camera-retro fa-sm"></i>
 				<div class="input-field col s12 m4	">
-					<input id="txt_nombre"
-						type="text" class="validate"> <label for="txt_nombre">DNI,
-						nombre,telefono</label>
+					<input id="txt_nombre" type="text" class="validate"> <label
+						for="txt_nombre">DNI, nombre,telefono</label>
 				</div>
 
-				
+
 
 				<div class="col m8 s12">
 					<div class="right-align">
@@ -55,39 +37,50 @@
 			<div class="col s12 m8 l9 contT"></div>
 		</div>
 
-<!-- 		<div class="row m12 s12 l12"> -->
-<!-- 			<div id="caja"> -->
-<!-- 				<div class="card-panel" id="contenido"> -->
-<!-- 					<div class="row"> -->
-<!-- 						<div class="col m12 s12 l12"> -->
-<!-- 							<div id="data-table-row-groupin" -->
-<!-- 								class="card-panel collapsible-body display #e3f2fd blue lighten-5" -->
-<!-- 								style="display: none;"> -->
+		<!-- 		<div class="row m12 s12 l12"> -->
+		<!-- 			<div id="caja"> -->
+		<!-- 				<div class="card-panel" id="contenido"> -->
+		<!-- 					<div class="row"> -->
+		<!-- 						<div class="col m12 s12 l12"> -->
+		<!-- 							<div id="data-table-row-groupin" -->
+		<!-- 								class="card-panel collapsible-body display #e3f2fd blue lighten-5" -->
+		<!-- 								style="display: none;"> -->
 
-<!-- 								<div id="data-table-row-grouping col s12 m8 l9" -->
-<!-- 								class="card-panel display #e3f2fd blue lighten-5" -->
-<!-- 								style="position: absolute"> -->
+		<!-- 								<div id="data-table-row-grouping col s12 m8 l9" -->
+		<!-- 								class="card-panel display #e3f2fd blue lighten-5" -->
+		<!-- 								style="position: absolute"> -->
 
-<!-- 								<div class="col s12 m8 l9 contT"></div> -->
-<!-- 								</div> -->
+		<!-- 								<div class="col s12 m8 l9 contT"></div> -->
+		<!-- 								</div> -->
 
-<!-- 								<div class="col s12 m8 l9 contT"></div> -->
-
-
-<!-- 							</div> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-<!-- 			</div> -->
+		<!-- 								<div class="col s12 m8 l9 contT"></div> -->
 
 
-<!-- 		</div> -->
+		<!-- 							</div> -->
+		<!-- 						</div> -->
+		<!-- 					</div> -->
+		<!-- 				</div> -->
+		<!-- 			</div> -->
+
+
+		<!-- 		</div> -->
 
 
 
 	</div>
+<!-- 	<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
 
-
+	<!-- Modal Structure -->
+	<div id="modal1" class="modal modal-fixed-footer">
+		<div class="modal-content">
+			<h4>Modal Header</h4>
+			<p id="texto">A bunch of text</p>
+		</div>
+		<div class="modal-footer">
+			<a href="#!"
+				class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+		</div>
+	</div>
 
 	<!-- 	DATATABLES -->
 

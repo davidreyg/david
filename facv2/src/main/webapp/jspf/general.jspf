@@ -2,7 +2,7 @@
 
 <!--Global Config-->
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-<title>GTH</title>
+<title>FAC V 2.0</title>
 <link rel="icon"
 	href="<c:url value='/resources/img/favicon/favicon.ico'></c:url>">
 <meta name="_csrf" content="${_csrf.token}" />
@@ -11,10 +11,11 @@
 
 
 <!-- Global Styles-->
-<link href="<c:url value='/resources/css/fontawesome/css/fontawesome-all.min.css'></c:url>"
+<link
+	href="<c:url value='/resources/css/fontawesome/css/fontawesome-all.min.css'></c:url>"
 	rel="stylesheet" type="text/css" />
-	
-	
+
+
 <link href="<c:url value='/resources/css/materialize.min.css'></c:url>"
 	rel="stylesheet" type="text/css" />
 
@@ -41,6 +42,8 @@
 <!-- Javascript-->
 <script src="<c:url value='/resources/js/jquery-3.2.1.min.js'></c:url>"
 	type="text/javascript"></script>
+<script src="<c:url value='/resources/js/materialize.min.js'></c:url>"
+	type="text/javascript"></script>
 <script
 	src="<c:url value='/resources/data-tables/js/jquery.dataTables.min.js'></c:url>"
 	type="text/javascript"></script>
@@ -63,8 +66,7 @@
 
 <script src="<c:url value='/resources/js/perfect-scrollbar.js'></c:url>"
 	type="text/javascript"></script>
-<script src="<c:url value='/resources/js/materialize.min.js'></c:url>"
-	type="text/javascript"></script>
+
 <script src="<c:url value='/resources/js/jquery-confirm.js'></c:url>"
 	type="text/javascript"></script>
 <script src="<c:url value='/resources/js/jBox.min.js'></c:url>"
