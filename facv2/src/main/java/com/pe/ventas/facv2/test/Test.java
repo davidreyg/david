@@ -5,6 +5,7 @@ import javax.sql.DataSource;
 import com.google.gson.Gson;
 import com.pe.ventas.facv2.config.AppConfig;
 import com.pe.ventas.facv2.config.UserDetailsServiceImpl;
+import com.pe.ventas.facv2.dao.CategoriaDAO;
 import com.pe.ventas.facv2.dao.EmpleadoDAO;
 import com.pe.ventas.facv2.dto.CustomUser;
 import com.pe.ventas.facv2.dto.Empleado;
@@ -14,16 +15,16 @@ public class Test {
 	public static DataSource d = AppConfig.getDataSource();
 	public static Gson gs = new Gson();
 	public static EmpleadoDAO au = new EmpleadoDAO(d);
-
+	public static CategoriaDAO cat = new CategoriaDAO(d);
 	public static void main(String[] args) {
 		// conect();
 		// checkSecurityDaoAuthentication();
 		// gilber cambio
 		// Autorizar();
 		//
-//		Emp_buscar();
+		// Emp_buscar();
 
-		Emp_listar();
+		Cat_listar();
 		// Renuncia();
 	}
 
@@ -50,7 +51,11 @@ public class Test {
 	public static void Emp_listar() {
 		System.out.println(gs.toJson(au.listar()));
 	}
-	
+
+	public static void Cat_listar() {
+		System.out.println(gs.toJson(cat.listar()));
+	}
+
 	public static void Emp_buscar() {
 		Empleado e = new Empleado();
 		e.setId_empleado("EMP-000003");
@@ -93,12 +98,11 @@ public class Test {
 		}
 
 	}
+
 	public static void Emp_elim() {
 		Empleado e = new Empleado();
 		e.setId_empleado("EMP-000004");
 		System.out.println((au.eliminar(e)));
 	}
-	
-
 
 }

@@ -24,9 +24,9 @@
 					<div class="right-align">
 						<a
 							class="btn-floating btn-medium waves-effect waves-light blue-grey"><i
-							class="material-icons">add</i></a> <a
+							class="tiny material-icons">add</i></a> <a
 							class="btn-floating btn-small waves-effect waves-light blue-grey"><i
-							class="material-icons">local_printshop</i></a>
+							class=" tiny material-icons">local_printshop</i></a>
 					</div>
 
 				</div>

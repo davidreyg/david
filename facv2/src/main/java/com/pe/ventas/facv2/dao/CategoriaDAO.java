@@ -23,39 +23,63 @@ public class CategoriaDAO implements CRUDOperations<Categoria> {
 		jt = new JdbcTemplate(dataSource);
 	}
 
-	
 	@Override
 	public List<Map<String, Object>> listar() {
-		
+
 		sql = "select * from categoria";
 		return (ArrayList<Map<String, Object>>) jt.queryForList(sql);
-		
+
 		// TODO Auto-generated method stub
-	
 	}
 
 	@Override
 	public int crear(Categoria ent) {
-		// TODO Auto-generated method stub
-		return 0;
+
+		int x = 0;
+		String sql = "INSERT INTO categoria(nom_cat) VALUES (?);";
+		try {
+			jt.update(sql, new Object[] { ent.getNom_cat() });
+			x = 1;
+		} catch (Exception e) {
+			System.out.println("Error al crear JDBCTEMPLATE: " + e);
+		}
+		return x;
+
 	}
 
 	@Override
 	public int modificar(Categoria ent) {
-		// TODO Auto-generated method stub
-		return 0;
+		int x = 0;
+		String sql = "UPDATE categoria SET `nom_cat`=?;";
+		try {
+			jt.update(sql, new Object[] { ent.getNom_cat() });
+			x = 1;
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("Error: " + e);
+		}
+		return x;
 	}
 
 	@Override
 	public int eliminar(Categoria id) {
-		// TODO Auto-generated method stub
-		return 0;
+		int x = 0;
+		String sql = "DELETE FROM categoria WHERE id_categoria=?";
+		try {
+			jt.update(sql, new Object[] { id.getId_categoria() });
+			x = 1;
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("Error: " + e);
+		}
+		return x;
 	}
 
 	@Override
 	public List<Map<String, Object>> buscar(Categoria id) {
-		// TODO Auto-generated method stub
-		return null;
+		List<Map<String, Object>> emp = jt.queryForList("select * from empleado where id_categoria=?",
+				new Object[] { id.getId_categoria() });
+		return emp;
 	}
 
 }
