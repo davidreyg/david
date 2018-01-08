@@ -20,12 +20,15 @@
 <link href="<c:url value='/resources/css/jBox.css'></c:url>"
 	rel="stylesheet" type="text/css" />
 <link
-	href="<c:url value='/resources/css/jquery.mCustomScrollbar.css'></c:url>"
+	href="<c:url value='/resources/css/perfect-scrollbar.css'></c:url>"
 	rel="stylesheet" type="text/css" />
 
 
 <!-- Javascript-->
 <script src="<c:url value='/resources/js/jquery-3.2.1.min.js'></c:url>"
+	type="text/javascript"></script>
+<script
+	src="<c:url value='/resources/js/perfect-scrollbar.js'></c:url>"
 	type="text/javascript"></script>
 <script src="<c:url value='/resources/js/materialize.min.js'></c:url>"
 	type="text/javascript"></script>
@@ -33,8 +36,7 @@
 	type="text/javascript"></script>
 <script src="<c:url value='/resources/js/jBox.min.js'></c:url>"
 	type="text/javascript"></script>
-<script src="<c:url value='/resources/js/jquery.mCustomScrollbar.js'></c:url>"
-	type="text/javascript"></script>
+
 <script>
 var facv2_context_path = "<%=request.getContextPath()%>";
 	function setUrlPath(url) {
