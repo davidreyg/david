@@ -28,8 +28,8 @@ public class EmpleadoController {
 	protected void metodosPedidos2(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
-		int op = Integer.parseInt(request.getParameter("opc"));
-		switch (op) {
+		int opcion = Integer.parseInt(request.getParameter("opc"));
+		switch (opcion) {
 		case 1:
 			out.println(gson.toJson(rd.listar()));
 			break;

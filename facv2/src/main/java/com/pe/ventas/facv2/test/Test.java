@@ -21,7 +21,8 @@ public class Test {
 		// gilber cambio
 		// Autorizar();
 		//
-		Emp_buscar();
+//		Emp_buscar();
+
 		Emp_listar();
 		// Renuncia();
 	}
@@ -97,5 +98,7 @@ public class Test {
 		e.setId_empleado("EMP-000004");
 		System.out.println((au.eliminar(e)));
 	}
+	
+
 
 }
