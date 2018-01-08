@@ -12,7 +12,7 @@ function listar() {
 				var lista = objJson;
 				console.log(objJson);
 				if (lista.length > 0) {
-					 alert("si hay datos causita c:");
+					 console.log("si hay datos causita c:");
 
 					for (var i = 0; i < lista.length; i++) {
 						var a = parseInt(i) + 1;
@@ -69,13 +69,13 @@ function listar() {
 						s += '<td>'
 							+lista[i].ema_emp+
 							 '</td>';
-						s += '<td><button class="notificar waves-effect waves-light btn modal-trigger #00e676 green accent-3" >Detalle</button>';
+						s += '<td><a class="btn-floating btn-medium waves-effect waves-light blue-grey"><i class="material-icons">edit</i></a>';
 						s += '</td>';
 						s += '</tr>';
 					}
 
 				} else {
-					alert("no hay datos");
+					console.log("no hay datos");
 					s += "";
 				}
 				
