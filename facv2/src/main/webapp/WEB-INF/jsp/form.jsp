@@ -29,8 +29,9 @@
 		<div class="card-panel">
 			<div class="row">
 				<div class="col m12 s12  center-align">Buscar Empleado</div>
+				<i class="fas fa-camera-retro fa-sm"></i>
 				<div class="input-field col s12 m4	">
-					<i class="mdi-action-pageview"></i><input id="txt_nombre"
+					<input id="txt_nombre"
 						type="text" class="validate"> <label for="txt_nombre">DNI,
 						nombre,telefono</label>
 				</div>
