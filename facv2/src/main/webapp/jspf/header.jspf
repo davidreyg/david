@@ -16,73 +16,88 @@
 
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
 					data-activates="ddn_alm-i " data-beloworigin="true"> <i
-						class="material-icons left">home</i> <i
-						class="material-icons right">arrow_drop_down</i>inicio
+						class="fas fa-home fa-lg"></i> <i
+						class="fas fa-sort-down fa-sm right"></i> inicio
+
+
 				</a></li>
 
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
 					data-activates="ddn_vent-v" data-beloworigin="true"> <i
-						class="material-icons left">shopping_cart</i>ventas <i
-						class="material-icons right">arrow_drop_down</i>
+						class="fas fa-shopping-cart fa-lg"> </i> <i
+						class="fas fa-sort-down fa-sm right"></i> Ventas
 
 				</a></li>
 
+
+
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
 					data-activates="ddn_comp-c" data-beloworigin="true"> <i
-						class="material-icons left"> shop</i>Compras <i
-						class="material-icons right">arrow_drop_down</i></a></li>
-
+						class="fas fa-truck fa-lg"> </i> <i
+						class="fas fa-sort-down fa-sm right"></i> Compras
+				</a>
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
 					data-activates="ddn_alm-h" data-beloworigin="true"> <i
-						class="material-icons left">store</i>Almacen <i
-						class="material-icons right">arrow_drop_down</i></a></li>
-
+						class="fas fa-th fa-lg"> </i> <i
+						class="fas fa-sort-down fa-sm right"></i> Almacen
+				</a>
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
 					data-activates="ddn_mant-h" data-beloworigin="true"> <i
-						class="material-icons left">settings</i>Mantenimiento <i
-						class="material-icons right">arrow_drop_down</i></a></li>
-
+						class="fas fa-cog fa-lg"> </i> <i
+						class="fas fa-sort-down fa-sm right"></i> Mantenimiento
+				</a>
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
 					data-activates="ddn_cons-h" data-beloworigin="true"> <i
-						class="material-icons left">search</i>Consultas <i
-						class="material-icons right">arrow_drop_down</i></a></li>
-
+						class="fas fa-search-plus fa-lg"> </i> <i
+						class="fas fa-sort-down fa-sm right"></i> Consultas
+				</a>
 				<li><a class="dropdown-button cyan lighten-1" href="#!"
 					data-activates="ddn_tes-h" data-beloworigin="true"> <i
-						class="material-icons left">assessment</i>Tesoreria<i
-						class="material-icons right">arrow_drop_down</i></a></li>
-
-
+						class="fas fa-chart-pie fa-lg"> </i> <i
+						class="fas fa-sort-down fa-sm right"></i> Tesoreria
+				</a>
 			</ul>
 
 
 			<ul class="side-nav" id="mobile-demo">
 				<!-- Dropdown Trigger -->
-				
-		
 
 
 
-    <li>
-      <div class="collapsible-header cyan "><i class="material-icons">filter_drama</i>First</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header cyan "><i class="material-icons">place</i>Second</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header cyan"><i class="material-icons">whatshot</i>Third</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
 
 
-	</ul>
+				<li>
+					<div class="collapsible-header cyan ">
+						<i class="material-icons">filter_drama</i>First
+					</div>
+					<div class="collapsible-body">
+						<span>Lorem ipsum dolor sit amet.</span>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header cyan ">
+						<i class="material-icons">place</i>Second
+					</div>
+					<div class="collapsible-body">
+						<span>Lorem ipsum dolor sit amet.</span>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header cyan">
+						<i class="material-icons">whatshot</i>Third
+					</div>
+					<div class="collapsible-body">
+						<span>Lorem ipsum dolor sit amet.</span>
+					</div>
+				</li>
+
+
+			</ul>
 
 
 		</div>
 	</nav>
-<!-- mantenimiento -->
+	<!-- mantenimiento -->
 	<ul id="ddn_mant-h" class=" dropdown-content">
 		<li><a href="#!">Empleados</a></li>
 		<li><a href="#!">Proveedores</a></li>
@@ -94,10 +109,10 @@
 		<li><a href="#!">Presentacion</a></li>
 		<li><a href="#!">Formas de Pago</a></li>
 		<li><a href="#!">Ubicaciones</a></li>
-		
-		</ul>
-	
-<!-- 	almacen -->
+
+	</ul>
+
+	<!-- 	almacen -->
 	<ul id="ddn_alm-h" class=" dropdown-content">
 		<li><a href="#!">Productos</a></li>
 		<li><a href="#!">Categoria</a></li>
@@ -106,7 +121,7 @@
 		<li><a href="#!">Existencias</a></li>
 		<li><a href="#!">Stock min</a></li>
 	</ul>
-<!-- 	consulta -->
+	<!-- 	consulta -->
 	<ul id="ddn_cons-h" class=" dropdown-content">
 		<li><a href="#!">Proveedores</a></li>
 		<li><a href="#!">Clientes</a></li>
@@ -114,19 +129,19 @@
 		<li><a href="#!">Compras</a></li>
 		<li><a href="#!">Ventas</a></li>
 		<li><a href="#!">Creditos</a></li>
-	
+
 	</ul>
-<!-- 	tesoreria -->
-		<ul id="ddn_tes-h" class=" dropdown-content">
+	<!-- 	tesoreria -->
+	<ul id="ddn_tes-h" class=" dropdown-content">
 		<li><a href="#!">Cobros</a></li>
 		<li><a href="#!">Pagos</a></li>
 		<li><a href="#!">Caja diaria</a></li>
 		<li><a href="#!">Libro diario</a></li>
 
-	
+
 	</ul>
-	
-	
+
+
 	<ul id="ddn_vent-v" class=" dropdown-content">
 		<li><a href="#!">Venta mostrador</a></li>
 		<li><a href="#!">Factura</a></li>
@@ -150,9 +165,9 @@
 		<li><a href="#!">Proveedores</a></li>
 		<li><a href="#!">Facturar guia de despacho</a></li>
 		<li><a href="#!">Recepcion de mercancia</a></li>
-	
-		
-		
+
+
+
 	</ul>
 
 

@@ -11,6 +11,7 @@
 	<div class="container">
 		<div class="card-panel">
 			<div class="row">
+
 				<div class="col m12 s12  center-align">Buscar Empleado</div>
 				<i class="fas fa-camera-retro fa-sm"></i>
 				<div class="input-field col s12 m4	">
@@ -19,17 +20,11 @@
 				</div>
 
 
+				<div class="col m12 s12  center-align">BUSCAR EMPLEADO</div>
+		
 
-				<div class="col m8 s12">
-					<div class="right-align">
-						<a
-							class="btn-floating btn-medium waves-effect waves-light blue-grey"><i
-							class="tiny material-icons">add</i></a> <a
-							class="btn-floating btn-small waves-effect waves-light blue-grey"><i
-							class=" tiny material-icons">local_printshop</i></a>
-					</div>
 
-				</div>
+				
 			</div>
 		</div>
 
