@@ -35,7 +35,7 @@
 						nombre,telefono</label>
 				</div>
 
-
+				
 
 				<div class="col m8 s12">
 					<div class="right-align">
@@ -81,9 +81,6 @@
 
 
 <!-- 		</div> -->
-
-
-
 
 
 
