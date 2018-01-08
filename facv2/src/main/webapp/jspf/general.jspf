@@ -23,18 +23,33 @@
 	href="<c:url value='/resources/css/perfect-scrollbar.css'></c:url>"
 	rel="stylesheet" type="text/css" />
 
+<!-- 	DATA TABLE -->
+<link
+	href="<c:url value='/resources/data-tables/css/jquery.dataTables.min.css'></c:url>"
+	rel="stylesheet" type="text/css" />
+<link
+	href="<c:url value='/resources/data-tables/css/dataTables.material.min.css'></c:url>"
+	rel="stylesheet" type="text/css" />
+
 
 <!-- Javascript-->
 <script src="<c:url value='/resources/js/jquery-3.2.1.min.js'></c:url>"
 	type="text/javascript"></script>
-<script
-	src="<c:url value='/resources/js/perfect-scrollbar.js'></c:url>"
+<script src="<c:url value='/resources/js/perfect-scrollbar.js'></c:url>"
 	type="text/javascript"></script>
 <script src="<c:url value='/resources/js/materialize.min.js'></c:url>"
 	type="text/javascript"></script>
 <script src="<c:url value='/resources/js/jquery-confirm.js'></c:url>"
 	type="text/javascript"></script>
 <script src="<c:url value='/resources/js/jBox.min.js'></c:url>"
+	type="text/javascript"></script>
+
+
+<script
+	src="<c:url value='/resources/data-tables/js/jquery.dataTables.min.js'></c:url>"
+	type="text/javascript"></script>
+<script
+	src="<c:url value='/resources/js/plugins/data-tables/data-tables-script.js'></c:url>"
 	type="text/javascript"></script>
 
 <script>
