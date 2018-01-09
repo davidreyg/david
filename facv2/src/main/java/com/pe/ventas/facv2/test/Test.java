@@ -24,7 +24,7 @@ public class Test {
 		//
 		// Emp_buscar();
 
-		Cat_listar();
+//		Cat_listar();
 		// Renuncia();
 	}
 
@@ -43,7 +43,7 @@ public class Test {
 		UserDetailsServiceImpl userdetailsService = new UserDetailsServiceImpl();
 		CustomUser user = userdetailsService.loadUserByUsername("abr");
 		System.out.println("nombre: " + user.getUsername());
-		System.out.println("password: " + user.getPassword());
+		System.out.println("password: " + user.getNOMBRE_AP());
 		System.out.println("checked!");
 
 	}

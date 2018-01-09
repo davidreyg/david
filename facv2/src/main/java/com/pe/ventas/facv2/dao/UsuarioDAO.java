@@ -50,11 +50,11 @@ public class UsuarioDAO {
 	}
 	
 	public ArrayList<Map<String, Object>> validar(String usuario, String pass) {
-        sql = "select * from usuario where trim(nom_usu)=? and trim(psw_usu)=?";
+        sql = "select * from usuario u, empleado e where u.id_empleado=e.id_empleado and trim(nom_usu)=? and trim(psw_usu)=?";
         return (ArrayList<Map<String, Object>>) jt.queryForList(sql, usuario, pass);
     }
 	public Map<String, Object> getByUserName(String usuario) {
-        sql = "select * from usuario where trim(nom_usu)=?";
+        sql = "select * from usuario u, empleado e where u.id_empleado=e.id_empleado and trim(nom_usu)=?";
         return jt.queryForMap(sql, usuario);
     }
     

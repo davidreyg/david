@@ -34,6 +34,12 @@ public class EmpleadoController {
 		modelAndView = new ModelAndView("mantenimiento/empleado", model);
 		return modelAndView;
 	}
+	
+	@RequestMapping(value = "/prov", method = RequestMethod.GET)
+	public ModelAndView mostrarJspProveedor(ModelMap model) {
+		modelAndView = new ModelAndView("mantenimiento/proveedor", model);
+		return modelAndView;
+	}
 
 	@RequestMapping(value = "/empleado", method = RequestMethod.GET)
 	protected void metodosPedidos2(HttpServletRequest request, HttpServletResponse response)

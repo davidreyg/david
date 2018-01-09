@@ -76,6 +76,10 @@ public class MainController {
 			// mp.put("info_puesto", sr);
 			// break;
 			case "usuario":
+				String x =  ((CustomUser) authentication.getPrincipal()).getNOMBRE_AP();
+				String y =  ((CustomUser) authentication.getPrincipal()).getID_ROL();
+				System.out.println(x);
+				System.out.println(y);
 				mp.put("datos_usuario", ((CustomUser) authentication.getPrincipal()).getNOMBRE_AP());
 				break;
 			}
