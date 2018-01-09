@@ -136,7 +136,7 @@ function listar() {
 
 												s += '<td>' + obj.ema_emp
 														+ '</td>';
-												s += '<td><div class="input-field inline"><a style="font-size: 2em; color: Tomato" onclick='
+												s += '<td style="min-width: 70px"><div class="input-field inline"><a style="font-size: 2em; color: Tomato" onclick='
 														+ '"al('
 														+ id
 														+ ')'

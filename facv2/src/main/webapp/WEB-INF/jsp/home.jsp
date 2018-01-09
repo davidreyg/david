@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
@@ -9,6 +9,7 @@
 
 <body>
 	<%@include file="../../jspf/header.jspf"%>
+<%-- 	<%@include file="../../jspf/aside_left.jspf"%> --%>
 	<!-- 	<div id="loader-wrapper"> -->
 	<!-- 		<div id="loader"></div> -->
 	<!-- 		<div class="loader-section section-left"></div> -->

@@ -66,7 +66,7 @@ public class HomeController {
 		String pagina="";
 		HttpSession session = request.getSession(true);
 		System.out.println(Rol);
-		if(Rol.equals("ROL-000002")) {
+		if(Rol.equals("ROL-000005")) {
 			System.out.println("redireccionar a home");
 			session.setAttribute("ModE", "MOD-000001");
 			pagina = "home";

@@ -23,6 +23,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 		CustomUser user=new CustomUser(userinfo,rd.List_Modulos(userinfo.get("ID_ROL")),
 				true,true,true,true);
 		System.out.println("loadByUsername is running");
+		System.out.println(rd.List_Modulos(userinfo.get("ID_ROL")));
 		return user;
 	}
 
