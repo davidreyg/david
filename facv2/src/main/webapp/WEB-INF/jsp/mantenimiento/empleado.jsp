@@ -4,13 +4,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<%@include file="../../jspf/general.jspf"%>
+<%@include file="../../../jspf/general.jspf"%>
 </head>
+
 <body>
-	<%@include file="../../jspf/header.jspf"%>
+	<%@include file="../../../jspf/header.jspf"%>
+
+
 	<div class="container">
 		<div class="card-panel">
-			<div class="row">		
+			<div class="row">
+				
 			</div>
 		</div>
 
@@ -49,7 +53,7 @@
 
 
 	</div>
-<!-- 	<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+	<!-- 	<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
 
 	<!-- Modal Structure -->
 	<div id="modal1" class="modal modal-fixed-footer">
@@ -71,7 +75,7 @@
 	<%@include file="../../../jspf/info_puesto.jspf"%>
 
 
-	<%@include file="../../jspf/footer.jspf"%>
+	<%@include file="../../../jspf/footer.jspf"%>
 	<script src="<c:url value='/resources/js/jsEmpleado.js'></c:url>"
 		type="text/javascript"></script>
 	<script type="text/javascript">

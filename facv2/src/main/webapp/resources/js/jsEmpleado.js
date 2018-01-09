@@ -120,15 +120,17 @@ function listar() {
 
 												s += '<td>' + obj.ema_emp
 														+ '</td>';
-												s += '<td><a class="btnsmall btn-floating btn-medium waves-effect waves-light blue-grey" onclick='
+												s += '<td><div class="input-field inline"><a style="font-size: 2em; color: Tomato" onclick='+ '"al('+ id+ ')'
+														+ '"><i class="far fa-edit"></i></a><a style="font-size: 2em; margin-left: 1px; color: #eeff41" onclick='
 														+ '"al('
 														+ id
 														+ ')'
-														+ '"><i class="tiny material-icons">edit</i></a>';
-												s += '</td>';
+														+ '"><i class="far fa-trash-alt "></i></a>';
+												s += '</div></td>';
 												s += '</tr>';
 											});
-
+							
+						
 							// for (var i = 0; i < lista.length; i++) {
 							//				
 							// }
@@ -201,7 +203,7 @@ function createTable() {
 	s += '<th>Genero</th>';
 	s += '<th>Telefono</th>';
 	s += '<th>Correo</th>';
-	s += '<th>xd</th>';
+	s += '<th> </th>';
 	s += '</tr>';
 	s += '</thead>';
 	s += '<tbody id="dataReq">';

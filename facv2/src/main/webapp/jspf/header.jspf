@@ -14,7 +14,7 @@
 			<ul class="right hide-on-med-and-down">
 				<!-- Dropdown Trigger -->
 
-				<li><a class="dropdown-button cyan lighten-1" href="#!"
+				<li><a class="dropdown-button cyan lighten-1" href="#"
 					data-activates="ddn_alm-i " data-beloworigin="true"> <i
 						class="fas fa-home fa-lg"></i> <i
 						class="fas fa-sort-down fa-sm right"></i> Inicio
@@ -99,7 +99,7 @@
 	</nav>
 	<!-- mantenimiento -->
 	<ul id="ddn_mant-h" class=" dropdown-content">
-		<li><a href="#!">Empleados</a></li>
+		<li><a href="<c:url value="/mantenimiento/emp"/>">Empleados</a></li>
 		<li><a href="#!">Proveedores</a></li>
 		<li><a href="#!">Categoria</a></li>
 		<li><a href="#!">Cliente</a></li>
