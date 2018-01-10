@@ -14,18 +14,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		auth.authenticationProvider(authenticationProvider());
 	}
 
-	
-	//  http.csrf().disable(); --CAMBIOS REALIZADOS
+	// http.csrf().disable(); --CAMBIOS REALIZADOS
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.csrf().disable().authorizeRequests().antMatchers("/resources/**").permitAll().anyRequest().authenticated().and().formLogin()
+		http.csrf().disable().authorizeRequests().antMatchers("/resources/**").permitAll().
+					
+		anyRequest().authenticated().and().formLogin()
 				.loginPage("/login").permitAll().and().logout().permitAll()/*.and().
 				authorizeRequests().antMatchers("/menu").permitAll().anyRequest().
 				anonymous()*/;
 	}
-	
+
 	public CustomAuthenticationProvider authenticationProvider() {
 		CustomAuthenticationProvider authProvider = new CustomAuthenticationProvider();
-	    return authProvider;
+		return authProvider;
 	}
 }

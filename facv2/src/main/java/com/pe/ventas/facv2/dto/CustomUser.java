@@ -8,7 +8,7 @@ import java.util.Map;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-public class CustomUser implements UserDetails,Serializable {
+public class CustomUser implements UserDetails, Serializable {
 	/**
 	 * 
 	 */
@@ -31,6 +31,7 @@ public class CustomUser implements UserDetails,Serializable {
 	private String ID_DIRECCION;
 	private String ES_SEXO;
 	private String NOMBRE_AP;
+
 	public String getID_DIRECCION() {
 		return ID_DIRECCION;
 	}
@@ -46,38 +47,13 @@ public class CustomUser implements UserDetails,Serializable {
 	boolean CredentialsNonExpired;
 	boolean Enabled;
 
-	public CustomUser(String nousuario, String pwusuario, String idusuario, String idtrabajador, String idempleado,
-			String idrol, String idpuesto, String idarea, String noarea, String nodep, String iddep, String nopuesto,
-			String nodireccion, String essexo, String nombreap, String iddir, ArrayList<Map<String, Object>> listmod,String noseccion,String idseccion) {
-		this.NO_USUARIO = nousuario;
-		this.PW_USUARIO = pwusuario;
-		this.ID_USUARIO = idusuario;
-		this.ID_TRABAJADOR = idtrabajador;
-		this.ID_EMPLEADO = idempleado;
-		this.ID_ROL = idrol;
-		this.ID_PUESTO = idpuesto;
-		this.ID_AREA = idarea;
-		this.NO_AREA = noarea;
-		this.ID_SECCION = idseccion;
-		this.NO_SECCION = noseccion;
-		this.NO_DEP = nodep;
-		this.ID_DEPARTAMENTO = iddep;
-		this.NO_PUESTO = nopuesto;
-		this.NO_DIRECCION = nodireccion;
-		this.ES_SEXO = essexo;
-		this.NOMBRE_AP = nombreap;
-		this.LIST_MODULO = listmod;
-		this.ID_DIRECCION = iddir;
-
-	}
-
-	public CustomUser(Map<String, Object> userinfo, ArrayList<Map<String, Object>> listmod,
-			boolean accountNonExpired, boolean AccountNonLocked, boolean CredentialsNonExpired, boolean Enabled) {
+	public CustomUser(Map<String, Object> userinfo, ArrayList<Map<String, Object>> listmod, boolean accountNonExpired,
+			boolean AccountNonLocked, boolean CredentialsNonExpired, boolean Enabled) {
 		this.NO_USUARIO = ((String) userinfo.get("NOM_USU")).trim();
 		this.PW_USUARIO = ((String) userinfo.get("PSW_USU")).trim();
 		this.ID_USUARIO = (String) userinfo.get("ID_USUARIO");
 		this.ID_EMPLEADO = (String) userinfo.get("ID_EMPLEADO");
-		this.ID_ROL = (userinfo.get("ID_ROL"))+"";
+		this.ID_ROL = (userinfo.get("ID_ROL")) + "";
 		this.NO_DIRECCION = (String) userinfo.get("DIR_EMP");
 		this.ES_SEXO = (String) userinfo.get("SEX_EMP");
 		this.NOMBRE_AP = ((String) userinfo.get("APEL_EMP")).trim() + " " + ((String) userinfo.get("NOM_EMP")).trim();
@@ -123,8 +99,6 @@ public class CustomUser implements UserDetails,Serializable {
 		// TODO Auto-generated method stub
 		return Enabled;
 	}
-
-	
 
 	public String getID_USUARIO() {
 		return ID_USUARIO;
@@ -181,7 +155,7 @@ public class CustomUser implements UserDetails,Serializable {
 	public void setNO_AREA(String nO_AREA) {
 		NO_AREA = nO_AREA;
 	}
-		
+
 	public String getID_SECCION() {
 		// TODO Auto-generated method stub
 		return this.ID_SECCION;
@@ -190,7 +164,7 @@ public class CustomUser implements UserDetails,Serializable {
 	public String getNO_SECCION() {
 		// TODO Auto-generated method stub
 		return this.NO_SECCION;
-	}	
+	}
 
 	public String getNO_DEP() {
 		return NO_DEP;

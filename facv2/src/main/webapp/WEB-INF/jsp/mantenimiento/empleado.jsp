@@ -16,7 +16,7 @@
 	<div id="main">
 		<div class="wrapper">
 			<%@include file="../../../jspf/aside_left.jspf"%>
-			<section id="contenido">
+			<section class="container">
 				<div id="table-datatables" class="card-panel">
 					<div class="col s12 m8 l9 contT"></div>
 				</div>

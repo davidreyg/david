@@ -35,6 +35,9 @@
 	href="<c:url value='/resources/data-tables/css/responsive.dataTables.min.css'></c:url>"
 	rel="stylesheet" type="text/css" />
 <link
+	href="<c:url value='/resources/data-tables/css/colReorder.dataTables.min.css'></c:url>"
+	rel="stylesheet" type="text/css" />
+<link
 	href="<c:url value='/resources/data-tables/css/buttons.dataTables.min.css'></c:url>"
 	rel="stylesheet" type="text/css" />
 
@@ -51,6 +54,9 @@
 	src="<c:url value='/resources/data-tables/js/dataTables.responsive.min.js'></c:url>"
 	type="text/javascript"></script>
 <script
+	src="<c:url value='/resources/data-tables/js/dataTables.colReorder.min.js'></c:url>"
+	type="text/javascript"></script>
+<script
 	src="<c:url value='/resources/data-tables/js/dataTables.buttons.min.js'></c:url>"
 	type="text/javascript"></script>
 <script
@@ -62,6 +68,12 @@
 <script
 	src="<c:url value='/resources/data-tables/js/buttons.html5.min.js'></c:url>"
 	type="text/javascript"></script>
+<script
+	src="<c:url value='/resources/data-tables/js/buttons.colVis.min.js'></c:url>"
+	type="text/javascript"></script>
+
+
+
 
 
 <script src="<c:url value='/resources/js/perfect-scrollbar.js'></c:url>"
@@ -76,7 +88,7 @@
 
 
 
-var facv2_context_path = "<%=request.getContextPath()%>	";
+var facv2_context_path = "<%=request.getContextPath()%>";
 	function setUrlPath(url) {
 		var s = facv2_context_path + url;
 		return s;

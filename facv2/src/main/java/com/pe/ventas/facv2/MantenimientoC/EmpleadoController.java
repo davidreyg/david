@@ -21,7 +21,7 @@ import com.pe.ventas.facv2.dao.EmpleadoDAO;
 
 @Controller
 @Scope("request")
-@RequestMapping("/mantenimiento/")
+@RequestMapping("/admin/")
 public class EmpleadoController {
 
 	EmpleadoDAO rd = new EmpleadoDAO(AppConfig.getDataSource());
