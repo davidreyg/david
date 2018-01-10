@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -9,10 +9,17 @@
 <link rel="stylesheet"
 	href="<c:url value='resources/css/custom/menu.css'/>" />
 </head>
+<style>
+footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0; /* NUEVO */
+}
+</style>
 <body>
-	<%-- 	<%@include file="../../jspf/header.jspf"%> --%>
+	<%@include file="../../jspf/header.jspf"%>
 	<center>
-		<div id="contMod" style="margin-top: 10%"></div>
+		<div id="contMod" style="margin-top: 10%; margin-bottom: 35%"></div>
 	</center>
 	<%@include file="../../jspf/footer.jspf"%>
 	<script type="text/javascript">
@@ -44,7 +51,7 @@
 		}
 
 		function createModulo(idmodulo, nombre, icon, color, link) {
-			console.log(idmodulo + "*" + link+"*"+color);
+			console.log(idmodulo + "*" + link + "*" + color);
 			var s = '<div class="circulo waves-effect waves-light"  id="'
 					+ idmodulo + "*" + link + '" onclick="show(this.id)">';
 

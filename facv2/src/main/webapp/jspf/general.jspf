@@ -13,7 +13,8 @@
 <link
 	href="<c:url value='/resources/css/fontawesome/css/fontawesome-all.min.css'></c:url>"
 	rel="stylesheet" type="text/css" />
-
+<link href="<c:url value='/resources/css/estilos.css'></c:url>"
+	rel="stylesheet" type="text/css" />
 
 <link href="<c:url value='/resources/css/materialize.min.css'></c:url>"
 	rel="stylesheet" type="text/css" />
@@ -75,7 +76,7 @@
 
 
 
-var facv2_context_path = "<%=request.getContextPath()%>";
+var facv2_context_path = "<%=request.getContextPath()%>	";
 	function setUrlPath(url) {
 		var s = facv2_context_path + url;
 		return s;

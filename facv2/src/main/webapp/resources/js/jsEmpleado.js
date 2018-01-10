@@ -1,27 +1,18 @@
 $(document).ready(function() {
-	// alert();
 	console.log("Asdasd");
-
-	// // 1. Create the button
-	// var button = document.createElement("button");
-	// button.innerHTML = "Do Something";
-
-	// 2. Append somewhere
-
-	// // 3. Add event handler
-	// button.addEventListener ("click", function() {
-	// alert("did something");
-	// });
+	setTimeout(function() {
+		$('body').addClass('loaded');
+	}, 2000);
 	$('.modal').modal({
-		dismissible : false, // Modal can be dismissed by clicking outside of the
-							// modal
+		dismissible : false, // Modal can be dismissed by clicking outside of
+								// the
 		opacity : .5, // Opacity of modal background
 		inDuration : 300, // Transition in duration
 		outDuration : 200, // Transition out duration
 		startingTop : '4%', // Starting top style attribute
 		endingTop : '10%', // Ending top style attribute
 		ready : function(modal, trigger) { // Callback for Modal open. Modal
-											// and trigger parameters available.
+			// and trigger parameters available.
 			alert("Ready");
 			console.log(modal, trigger);
 		},
@@ -38,7 +29,7 @@ $(document).ready(function() {
 function listar() {
 	$
 			.getJSON(
-					facv2_context_path + "/mantenimiento/empleado",
+					facv2_context_path + "/mantenimiento/emp",
 					"opc=1",
 					function(objJson) {
 						var s = "";
@@ -200,7 +191,7 @@ function listar() {
 							//
 							// $("#otros").val(cantidad);
 						});
-					});
+					});	
 }
 function al(id) {
 	alert(id);

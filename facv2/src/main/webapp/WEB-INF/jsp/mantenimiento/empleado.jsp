@@ -8,16 +8,23 @@
 
 <body>
 	<%@include file="../../../jspf/header.jspf"%>
-
-
-	<div class="container">
-		<div id="table-datatables" class="card-panel">
-			<div class="col s12 m8 l9 contT"></div>
-		</div>
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
 	</div>
-	<%@include file="../../../jspf/info_puesto.jspf"%>
+	<div id="main">
+		<div class="wrapper">
+			<%@include file="../../../jspf/aside_left.jspf"%>
+			<section id="contenido">
+				<div id="table-datatables" class="card-panel">
+					<div class="col s12 m8 l9 contT"></div>
+				</div>
+			</section>
+		</div>
+		<%@include file="../../../jspf/info_puesto.jspf"%>
 
-
+	</div>
 	<%@include file="../../../jspf/footer.jspf"%>
 	<script src="<c:url value='/resources/js/jsEmpleado.js'></c:url>"
 		type="text/javascript"></script>

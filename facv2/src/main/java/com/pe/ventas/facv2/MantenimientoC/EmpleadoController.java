@@ -29,9 +29,15 @@ public class EmpleadoController {
 
 	private ModelAndView modelAndView;
 
-	@RequestMapping(value = "/emp", method = RequestMethod.GET)
+	@RequestMapping(value = "/empleado", method = RequestMethod.GET)
 	public ModelAndView mostrarJspEmpleado(ModelMap model) {
 		modelAndView = new ModelAndView("mantenimiento/empleado", model);
+		return modelAndView;
+	}
+	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public ModelAndView mostrarJspPrincipal(ModelMap model) {
+		modelAndView = new ModelAndView("mantenimiento/mant_principal", model);
 		return modelAndView;
 	}
 	
@@ -41,7 +47,7 @@ public class EmpleadoController {
 		return modelAndView;
 	}
 
-	@RequestMapping(value = "/empleado", method = RequestMethod.GET)
+	@RequestMapping(value = "/emp", method = RequestMethod.GET)
 	protected void metodosPedidos2(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		PrintWriter out = response.getWriter();

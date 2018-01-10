@@ -1,220 +1,65 @@
 <header id="header" class="page-topbar">
 	<!-- start header nav-->
-	<nav class="cyan lighten-1">
-		<div class="nav-wrapper">
-			<div class="orange lighten-4 darken-1">
-				<a href="#!" class="brand-logo">Logo</a> <a href="#"
-					data-activates="mobile-demo" class="button-collapse"><i
-					class="fa fa-bars"></i></a>
+	<div class="navbar-fixed">
+		<nav class="navbar-color">
+			<div class="nav-wrapper light-blue darken-3">
+<!-- 			aqui se cambia el color ddel navbar -->
+				<ul class="left">
+					<li><h1 class="logo-wrapper">
+							<a href="<%=request.getContextPath()%>/menu"
+								class="brand-logo darken-1"><img
+								src="<c:url value="/resources/img/logo.png"/>" alt="logo" style="width: 50px;"></a>
+						</h1></li>
+				</ul>
+				<ul class="right hide-on-med-and-down">
+
+					<li>
+						<div class="chip grey darken-1 white-text cgProfile" onclick="loadProfile()" style="cursor: pointer;">
+						</div>
+					</li>
+					<li><a href="<%=request.getContextPath()%>/menu"
+						class="waves-effect waves-block waves-light tooltipped"
+						data-position="bottom" data-delay="50" data-tooltip="Menú"><i
+							class="mdi-navigation-apps"></i></a></li>
+					<li><a href="javascript:void(0);"
+						class="waves-effect waves-block waves-light toggle-fullscreen tooltipped"
+						data-position="bottom" data-delay="50"
+						data-tooltip="Pantalla Completa"><i
+							class="mdi-action-settings-overscan"></i></a></li>
+					<li><a href="javascript:void(0);"
+						class="waves-effect waves-block waves-light notification-button"
+						data-activates="notifications-dropdown"><i
+							class="mdi-social-notifications"><small
+								class="notification-badge">5</small></i> </a></li>
+					<li><a href="<%=request.getContextPath()%>/logout"
+						class="waves-effect waves-block waves-light tooltipped"
+						data-position="bottom" data-delay="50"
+						data-tooltip="Cerrar Sesión"><i class="mdi-action-exit-to-app"></i></a>
+					</li>
+				</ul>
+				<!-- translation-button -->
+				<!-- notifications-dropdown -->
+				<ul id="notifications-dropdown" class="dropdown-content">
+					<li>
+						<h5>
+							NOTIFICATIONS <span class="new badge">5</span>
+						</h5>
+					</li>
+					<li class="divider"></li>
+					<li><a href="#!"><i class="mdi-action-add-shopping-cart"></i>
+							A new order has been placed!</a> <time class="media-meta"
+							datetime="2015-06-12T20:50:48+08:00">2 hours ago</time></li>
+				</ul>
 			</div>
-
-			<ul class="right hide-on-med-and-down">
-				<!-- Dropdown Trigger -->
-
-				<li><a class="dropdown-button cyan lighten-1" href="#"
-					data-activates="ddn_alm-i " data-beloworigin="true"> <i
-						class="fas fa-home fa-lg"></i> <i
-						class="fas fa-sort-down fa-sm right"></i> Inicio
-
-
-				</a></li>
-
-				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_vent-v" data-beloworigin="true"> <i
-						class="fas fa-shopping-cart fa-lg"> </i> <i
-						class="fas fa-sort-down fa-sm right"></i> Ventas
-
-				</a></li>
-
-
-
-				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_comp-c" data-beloworigin="true"> <i
-						class="fas fa-truck fa-lg"> </i> <i
-						class="fas fa-sort-down fa-sm right"></i> Compras
-				</a>
-				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_alm-h" data-beloworigin="true"> <i
-						class="fas fa-th fa-lg"> </i> <i
-						class="fas fa-sort-down fa-sm right"></i> Almacen
-				</a>
-				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_mant-h" data-beloworigin="true"> <i
-						class="fas fa-cog fa-lg"> </i> <i
-						class="fas fa-sort-down fa-sm right"></i> Mantenimiento
-				</a>
-				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_cons-h" data-beloworigin="true"> <i
-						class="fas fa-search-plus fa-lg"> </i> <i
-						class="fas fa-sort-down fa-sm right"></i> Consultas
-				</a>
-				<li><a class="dropdown-button cyan lighten-1" href="#!"
-					data-activates="ddn_tes-h" data-beloworigin="true"> <i
-						class="fas fa-chart-pie fa-lg"> </i> <i
-						class="fas fa-sort-down fa-sm right"></i> Tesoreria
-				</a></li>
-				<li class=" cyan" style="padding-left: 30px">
-					<div class=" chip grey darken-1 white-text cgProfile" onclick=""
-						style="cursor: pointer;"></div>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<!-- mantenimiento -->
-	<ul id="ddn_mant-h" class=" dropdown-content">
-		<li><a href="<c:url value="/mantenimiento/emp"/>">Empleados</a></li>
-		<li><a href="<c:url value="/mantenimiento/prov"/>">Proveedores</a></li>
-		<li><a href="#!">Categoria</a></li>
-		<li><a href="#!">Cliente</a></li>
-		<li><a href="#!">Presentacion</a></li>
-		<li><a href="#!">Impuestos</a></li>
-		<li><a href="#!">Entidades bancarias</a></li>
-		<li><a href="#!">Presentacion</a></li>
-		<li><a href="#!">Formas de Pago</a></li>
-		<li><a href="#!">Ubicaciones</a></li>
-
-	</ul>
-
-	<!-- 	almacen -->
-	<ul id="ddn_alm-h" class=" dropdown-content">
-		<li><a href="#!">Productos</a></li>
-		<li><a href="#!">Categoria</a></li>
-		<li><a href="#!">Presentacion</a></li>
-		<li class="divider"></li>
-		<li><a href="#!">Existencias</a></li>
-		<li><a href="#!">Stock min</a></li>
-	</ul>
-	<!-- 	consulta -->
-	<ul id="ddn_cons-h" class=" dropdown-content">
-		<li><a href="#!">Proveedores</a></li>
-		<li><a href="#!">Clientes</a></li>
-		<li><a href="#!">Existencias</a></li>
-		<li><a href="#!">Compras</a></li>
-		<li><a href="#!">Ventas</a></li>
-		<li><a href="#!">Creditos</a></li>
-
-	</ul>
-	<!-- 	tesoreria -->
-	<ul id="ddn_tes-h" class=" dropdown-content">
-		<li><a href="#!">Cobros</a></li>
-		<li><a href="#!">Pagos</a></li>
-		<li><a href="#!">Caja diaria</a></li>
-		<li><a href="#!">Libro diario</a></li>
-
-
-	</ul>
-
-
-	<ul id="ddn_vent-v" class=" dropdown-content">
-		<li><a href="#!">Venta mostrador</a></li>
-		<li><a href="#!">Factura</a></li>
-		<li><a href="#!">Ordenes de salida</a></li>
-		<li><a href="#!">Factura de guia</a></li>
-		<li class="divider"></li>
-		<li><a href="#!">Clientes</a></li>
-	</ul>
-
-	<ul id="ddn_mant-v" class="cyan lighten-1 dropdown-content">
-		<li><a href="#!">Empleado</a></li>
-		<li><a href="#!">Proveedores</a></li>
-		<li class="divider"></li>
-		<li><a href="#!">Categoria</a></li>
-	</ul>
-
-
-
-
-	<ul id="ddn_comp-c" class="dropdown-content">
-		<li><a href="#!">Proveedores</a></li>
-		<li><a href="#!">Facturar guia de despacho</a></li>
-		<li><a href="#!">Recepcion de mercancia</a></li>
-
-
-
-	</ul>
-
-
-
-	<ul id="ddn_alm-v" class="dropdown-content">
-		<li><a href="#!">Productos</a></li>
-		<li><a href="#!">Mercancia</a></li>
-	</ul>
-	<ul id="ddn_alm-i" class="dropdown-content">
-		<li><a href="#!">Iniciar</a></li>
-		<li><a href="<%=request.getContextPath()%>/logout">Salir</a></li>
-	</ul>
-
-
-	<ul id="mobile-demo" class="side-nav">
-		<li><div class="user-view">
-				<div class="background">
-					<img src="images/office.jpg">
-				</div>
-				<a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-				<a href="#!name"><span class="white-text name">John Doe</span></a> <a
-					href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-			</div></li>
-		<li><a href="#!"><i class="material-icons">cloud</i>First
-				Link With Icon</a></li>
-		<li><a href="#!">Second Link</a></li>
-		<li><div class="divider"></div></li>
-		<li><a class="subheader">Subheader</a></li>
-		<li><a href="<c:url value="/mantenimiento/emp"/>">Empleados</a></li>
-		<li class="blue">
-			<ul class="collapsible collapsible-accordion">
-				<li><a
-					class="collapsible-header white-text waves-effect waves-blue "
-					href="#"> <i class="fas fa-home fa-lg"></i> <i
-						class="fas fa-sort-down fa-sm right"></i> Inicio
-
-
-				</a>
-					<div class="collapsible-body z-depth-3">
-						<ul>
-							<li><a class="waves-effect waves-blue" href="#">English</a></li>
-							<li><a class="waves-effect waves-blue" href="#">Deutsch</a></li>
-							<li><a class="waves-effect waves-blue" href="#">Português</a></li>
-							<li><a class="waves-effect waves-blue" href="#">Español</a></li>
-							<li><a class="waves-effect waves-blue" href="#">Svenska</a></li>
-							<li><div class="divider"></div></li>
-						</ul>
-					</div></li>
-			</ul>
-		</li>
-		<li class="blue">
-			<ul class="collapsible collapsible-accordion">
-				<li><a
-					class="collapsible-header white-text waves-effect waves-blue "
-					href="#"> <i class="fas fa-home fa-lg"></i> <i
-						class="fas fa-sort-down fa-sm right"></i> Inicio
-
-
-				</a>
-					<div class="collapsible-body z-depth-3">
-						<ul>
-							<li><a class="waves-effect waves-blue" href="#">English</a></li>
-							<li><a class="waves-effect waves-blue" href="#">Deutsch</a></li>
-							<li><a class="waves-effect waves-blue" href="#">Português</a></li>
-							<li><a class="waves-effect waves-blue" href="#">Español</a></li>
-							<li><a class="waves-effect waves-blue" href="#">Svenska</a></li>
-							<li><div class="divider"></div></li>
-						</ul>
-					</div></li>
-			</ul>
-		</li>
-	</ul>
-	<a href="#" data-activates="slide-out" class="button-collapse"><i
-		class="material-icons">menu</i></a>
-
-
-
+		</nav>
+	</div>
 </header>
 <script>
 	$(document)
 			.ready(
 					function() {
 
-						$(".button-collapse").sideNav();
+// 						$(".button-collapse").sideNav();
 						try {
 							$
 									.getJSON(
